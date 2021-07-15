@@ -2,12 +2,16 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    font-family: sans-serif;
+    font-family: "Open Sans" , sans-serif;
     font-size: 25px;
+    color: #3A3D46;
 }
 
 body{
     background-color: #1BA6A6;
+    background-image: url(components/images/bg-pattern-bottom.svg),url(components/images/bg-pattern-top.svg);
+    background-repeat: no-repeat;
+    background-position: 177% -67% , -91% 118%;
 }
 
 .container1{
@@ -15,47 +19,63 @@ body{
     align-items: center;
     justify-content: center;
     height: 100vh;
+    
 }
 
 .container2{
 display: flex;
-background-color: #FFFFFF;
+background-color: #21bebe;
 border-radius: 15px;
-align-items: center;
-justify-content: center;
+align-items: flex-end;
 width: 400px;
-height: 400px;
-
+height: 500px;
+background-image: url(components/images/bg-pattern-card.svg);
+background-repeat: no-repeat;
+background-size: 140%;
+box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.247) ;
 }
 
-.cartao h2 ::before{
-    content: "";
-    width: 20px;
-    height: 5px;
-    background-color: lawngreen;
-}
+
 
 .imgContent{
     border-radius: 50%;
+    margin-top: -50px;
     border: solid 7px #fff;
+    box-shadow: 0px 0px 20px rgb(0 0 0 / 25%);
+
 }
 
 .cartao{
     display: flex;
     align-items: center;
     flex-direction: column;
-    
+    padding-bottom: 30px;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0px 0px 20px rgb(0 0 0 / 25%);
 }
 
 .conteudo{
     display: flex;
-    flex-direction: row;
 }
 
 p{
     font-size: 17px;
-    
     margin-top: 50px;
     text-align: center;
     margin: 49px 35px 0px 35px;
+    font-weight: 400;
+}
+
+h2{
+    font-weight: 400;
+    font-size: 20px;
+    
+}
+
+h1{
+
+padding-bottom: 15px;
+padding-top: 30px;
+
 }
